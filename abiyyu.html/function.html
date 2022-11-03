@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function rumusLuasLingkaran(jari){ //parameter
+            var r = jari; //4
+            var pi = 22/7;
+
+            var luas = pi * r ** 2;
+            document.write(luas + "<br/>");
+        }
+        rumusLuasLingkaran(2);
+        rumusLuasLingkaran(4);
+        rumusLuasLingkaran(10);
+
+        var namafungsi = function(){
+            document.write("hello" + "<br/>");
+            console.log("");
+        }
+        namafungsi(2);
+        namafungsi(4);
+        namafungsi(10);
+
+        function cetak(kalimat){
+            document.write(kalimat + "<br/>");
+        }
+        cetak("Ini adalah text yang ditampilkan");
+        cetak("text 2");
+    </script>
+</body>
+</html>

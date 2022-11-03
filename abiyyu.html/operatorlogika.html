@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kkm = 75;
+        var nilai_siswa = -10;
+
+        /**
+        *anda lulus jika
+        *   lebih dari 75 dan kurang dari sama dengan 100
+        *   jika tidak maka "Masukan Nilai antara 1 - 100"
+        */
+
+        if(nilai_siswa > kkm && nilai_siswa <= 100){
+            document.write("Anda lulus"); // true
+        }
+        else if(nilai_siswa < kkm){
+            document.write("Anda Tidak lulus");
+        }
+        else{
+            document.write("Masukan Nilai antara 1 - 100");
+        }
+    </script>
+</body>
+</html>
