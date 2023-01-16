@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var gagak = {
+            nama : "raven",
+            warna : "hitam",
+            jumlah_sayap : 2,
+            warna_mata : "hitam",
+            jumlah_mata : 2,
+            kaki : {
+                jumlah_kaki : 2,
+                warna_kaki : "kuning"
+            },
+            
+            dipanggil : function(){
+            return "terbang"
+            },
+            tidur : function() {
+                return "tidur di atas genteng";
+            },
+        };
+
+        document.write(`ini namanya ${gagak.nama}`+ "<br/>");
+        document.write(`warnanya ${gagak.warna}`+ "<br/>");
+        document.write(`sayapnya ada ${gagak.jumlah_sayap}`+ "<br/>");
+        document.write(`warna matanya ${gagak.warna_mata}`+ "<br/>");
+        document.write(`matanya ada ${gagak.jumlah_mata}`+ "<br/>");
+        document.write(`kakinya ada ${gagak.kaki.jumlah_kaki}`+ "<br/>");
+        document.write(`warna kakinya ${gagak.kaki.warna_kaki}`+ "<br/>");
+        document.write(gagak.dipanggil() + "<br/>");
+        document.write(gagak.tidur());
+    </script>
+</body>
+</html>
