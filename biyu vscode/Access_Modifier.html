@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+KONSEP DASAR OOP / PILAR
+        INHERITANCE / PEWARISAN
+        ENKAPSULASI
+        ARTRAKSI
+        POLLYMORPHISME
+*/
+        class siswa  {
+            nama_belakang;
+            nama_depan;
+            nama_lengkap;
+            nilai_mtk;
+            nilai_dlg;
+            KKM = 75;
+
+            cek_kelulusan(){
+                var nilai = (this.nilai_mtk + this.nilai_dlg) / 2;
+                if(nilai > this.KKM) {
+                    return "Lulus";
+                }else{
+                    return "Tidak Lulus";
+                }
+            }
+        }
+
+        var siti = new siswa();
+        siti.nama_belakang = "Siti";
+        siti.nama_depan = "Zahrotul";
+        siti.nama_lengkap = "Siti Zahrotul";
+        siti.nilai_mtk = 70;
+        siti.nilai_dlg = 80;
+        siti.KKM = 10;
+        document.write(siti.nama_lengkap +"<br/>");
+        document.write(siti.cek_kelulusan());
+
+    </script>
+</body>
+</html>
