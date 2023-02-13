@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pakai class
+            //Blueprint / template dari objek
+            class mobil{
+                //atribut
+                warna = "Biru langit";
+                merek;
+                ukuran_ban;
+                jumlah_ban = 4;
+
+                //method / function
+                maju(){
+                    return "maju dengan " + this.jumlah_ban + " ban "
+                }
+
+                mundur(){}
+
+                ngerem(){}
+            }
+
+                var lamborghini = new mobil();
+                    
+                    lamborghini.merek = "Lamborghini";
+                    lamborghini.warna = "Biru Langit";  
+
+                    document.write(lamborghini.warna + "<br/>");
+                    document.write(lamborghini.maju());
+            //tidak pakai class
+                var apollo = {
+                    warna : "coklat",
+                    jumlah_ban : 4,
+                    ukuran_ban : 30,
+                    maju : function (){},
+                    mundur : function (){},
+                    ngerem : function (){}
+                }
+
+               
+              //1.  //siswa = syifa
+                    //nama = syifa
+                    //kelas = 10
+                    //jurusan =pplg
+                    //tahun lahir = 2005
+                    //alamat
+
+               //2. //sri 
+                    //nama = sri
+                    //kelas = 11
+                    //jurusan = tkr
+                    //tahun lahir = 2000
+                    //alamat
+                    
+                    //rahayu
+                    //nama = rahayu
+                    //kelas = 10
+                    //jurusan = tsm
+                    //tahun lahir = 2022
+                    //alamat
+                   
+                    //tampilan
+                    //umur syifa 21 tahun
+                    //umur sri 23
+                    //umur rahayu 1
+
+                    //hitung umur
+                        //tahun sekarang-tahun lahir
+    </script>
+</body>
+</html>
