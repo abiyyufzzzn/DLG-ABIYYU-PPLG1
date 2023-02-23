@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // class Enemy {
+       //     name;
+       //     hp;
+       //     attack_point;
+
+       //     attack(){
+        //        return "Serang karakter utama !";
+        //    }
+       // }
+
+       // class pocong extends Enemy{}//child class dari enemy
+       //     var pocong1 = new pocong();
+       //     document.write(pocong1.attack()+ "<br/>");
+
+
+
+       // class zombie extends Enemy{ //child dari enemy
+       //     walk(){
+      //          return "Jalan";
+      //      }
+      //  }
+
+       // var zombie1 = new zombie();
+      //  zombie1.name = "Gargantuar";
+      //  zombie1.hp = 5000;
+       // zombie1.attack_point = 50;
+
+       // document.write(zombie1.name()+ "<br/>");
+      //  document.write(zombie1.hp()+ "<br/>");
+      //  document.write(zombie1.attack_point()+ "<br/>");
+      //  document.write(zombie1.attack()+ "<br/>");
+      //  document.write(zombie1.walk());
+
+
+
+
+
+
+        //contoh 
+        class kendaraan {
+            merek = "merek 1";
+            nama = "Kendaraan 1";
+            
+            maju(){
+                return "Kendaraan Maju";
+            }
+        }
+
+        class mobil extends kendaraan{
+            //method overrinding
+            //ditimpah
+            maju(){
+                return "Kendaraan maju dengan 4 ban di darat";
+            }
+        }
+        var sedan = new mobil();
+        document.write(sedan.maju()+ "<br/>");
+        document.write(sedan.nama);
+    </script>
+</body>
+</html>
