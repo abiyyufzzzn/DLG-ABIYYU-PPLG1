@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            //tambahin method get set
+            #username ;
+            //password panjangnya lebih dari 8
+            //tampilannya "********"
+            #password ;
+            //umur tdak boleh kurang dari 18 tahun
+            #umur ;
+            //email harus ada @
+            #email ;
+
+            set username(nama){
+                this.#username = nama;
+            }
+            get username(){
+                return this.#username;
+            }
+
+            set password(pass){
+                if(pass.length < 8){
+                    document.write("*Masukkan password lebih dari 8 huruf*" + "<br>");
+                }
+
+                this.#password = pass;
+            }
+            get password(){
+                return this.#password;
+            }
+
+            set umur(usia){
+                if(usia < 18){
+                    document.write("*umur harus lebih 18 tahun*" + "<br>"); 
+                }
+                this.#umur = usia;
+            }
+            get umur(){
+                return this.#umur;
+            }
+
+            set email(email){
+            if(email.include('@')){  
+                this.#email = email;
+            }else{
+                document.write("Email harus menggunakan @")
+             }
+            }
+            get email(){
+                return this.#email;
+            }
+        }
+
+        var user1 = new user();
+        user1.username = "abiyu";
+        user1.password = "12345";
+        user1.umur ="5"
+        user1.email ="baxcd@gmail.com"
+        
+        document.write(user1.username + "<br>");
+        document.write(user1.password + "<br>");
+        document.write(user1.umur + "<br>");
+        document.write(user1.email);
+    </script>
+</body>
+</html> 
