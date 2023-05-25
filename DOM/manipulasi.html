@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="parent">
+        <p class="paragraf" id="paragraf 1"> <h1> Paragraf 1</h1></p>
+        <p class="paragraf"> paragraf 2 </p>
+        <p class="paragraf"> paragraf 3 </p>
+    </div>
+    <p id="parent">ini Parent</p>
+    <input type="text" value="ini nama" id="bagong">
+    <script>
+        var element = document.getElementById("paragraf1");
+        var siswa = {
+            nama : "Ekaa",
+            kelas : "XI PPLG",
+        };
+        siswa.nama = "Update Nama";
+
+        //ambil dan manipulasi Text
+        //element.innerText = "Update";
+
+        //console.log(element.innerText = "<i>Update</i>");
+        console.log(element.innerHTML = "<i>Update</i>");
+        //console.dir(element);
+        //ambil dan manipulasi style/design
+        console.log(element.style.color = "blue");
+        element.style.backgroundColor = "red";
+        element.style.borderBottom = "1px solid red";
+        //ambil dan manipulasi value
+        var input = document.getElementById("bagong");
+        console.log(input.value);
+    </script>
+</body>
+</html>
